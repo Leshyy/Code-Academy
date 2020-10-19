@@ -53,7 +53,7 @@ function checkWin() {
     ) {
         declareWinner();
     } else if (
-        // diagnol win
+        // diagonal win
         btns[0].innerText === btns[4].innerText &&
         btns[4].innerText === btns[8].innerText
     ) {
