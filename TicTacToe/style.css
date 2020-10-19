@@ -8,8 +8,8 @@ body {
 
 button {
     font-size: 2rem;
-    height: 10rem;
-    width: 10rem;
+    height: 5rem;
+    width: 5rem;
     color: rgb(255, 255, 255);
     border: 2px solid black;
     background: #4b4e1f;
@@ -19,8 +19,8 @@ button {
     width: 30%;
 }
 .row-1,
-row-2,
-row-3 {
+.row-2,
+.row-3 {
     display: flex;
-    flex: 0 1 auto;
+    flex: 1 1 10rem;
 }
