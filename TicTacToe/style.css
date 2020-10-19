@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-size: 62.5%;
+}
+
+button {
+    font-size: 2rem;
+    height: 10rem;
+    width: 10rem;
+    color: rgb(255, 255, 255);
+    border: 2px solid black;
+    background: #4b4e1f;
+    cursor: pointer;
+}
+.board {
+    width: 30%;
+}
+.row-1,
+row-2,
+row-3 {
+    display: flex;
+    flex: 0 1 auto;
+}
