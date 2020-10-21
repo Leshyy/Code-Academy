@@ -14,11 +14,16 @@ function updateTimer() {
     secondsInterval = setInterval(function () {
         //end of time
         if (timeRemaining === 0) {
+            if (playerMove === '') {
+                playerMove = getRandomMove();
+                console.log(playerMove);
+            }
             let enemyMove = getRandomMove();
             computerPlayDisplay.innerText = enemyMove;
             resetBtnColor();
             calcWin(playerMove, enemyMove);
             clearInterval(secondsInterval);
+            playerMove = '';
             startBtn.disabled = false; // enable back timer button
         } else {
             timeRemaining--;
@@ -94,7 +99,7 @@ var playerScore = 0;
 var computerScore = 0;
 var timerId;
 var secondsInterval;
-var playerMove;
+var playerMove = '';
 
 //references
 var startBtn = document.querySelector('#start-btn');
